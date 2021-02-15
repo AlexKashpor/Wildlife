@@ -23,7 +23,6 @@ nav {
 }
 
 .header {
-    width: 100vw;
     height: 100vh;
     background-image: url('../img/Hero.jpg');
 
@@ -80,7 +79,6 @@ nav {
 
     .header__donate {
         padding: 16px 42px;
-        //styleName: regular-UI;
         font-family: 'Roboto';
         font-size: 23px;
         font-style: normal;
@@ -94,4 +92,152 @@ nav {
         color: #F7F7F7;
     }
 }
+
 //latest articles
+.latestArticles {
+    width: 100%;
+    background-color: #CCCCCC;
+
+
+    .latestArticles__h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #333333;
+        padding-top: 140px;
+        margin-bottom: 45px;
+    }
+
+    .latestArticles__h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #666666;
+        margin-bottom: 130px;
+    }
+
+    .slider {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 250px;
+
+        .slider__arrlft {}
+
+        .slider__box {
+            width: 300px;
+            height: 360px;
+            background-color: #fff;
+            position: relative;
+            background-size: contain;
+
+            .slider__h6 {
+                font-family: 'Open Sans';
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px;
+                letter-spacing: 0em;
+                // text-align: center;
+                color: #F7F7F7;
+                position: absolute;
+                bottom: 100px;
+                left: 125px;
+
+            }
+
+            .slider__paragraph {
+                font-family: 'Open Sans';
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #F7F7F7;
+                position: absolute;
+                bottom: 50px;
+                left: 70px;
+
+            }
+        }
+
+        .slider__box:nth-child(2) {
+            background: url('/img/latestArticlesSlider1.jpg');
+
+        }
+
+        .slider__box:nth-child(3) {
+            background: url('/img/latestArticlesSlider2.jpg');
+        }
+
+        .slider__box:nth-child(4) {
+            background: url('/img/latestArticlesSlider3.jpg') brown;
+        }
+    }
+
+    .form {
+        // display: flex;
+        // flex-flow: column;
+        display: block;
+        text-align: center;
+        position: relative;
+
+        .form__paragraph {
+            font-family: Open Sans;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 41px;
+            letter-spacing: 0em;
+            color: #333333;
+            margin-bottom: 65px;
+        }
+
+        .form__input {
+            width: 660px;
+            margin-bottom: 238px;
+            background-color: #fff;
+            background-color: #CCCCCC;
+            border: 1px solid #666666;
+            height: 65px;
+            
+        
+        }
+        .form__input::placeholder{
+            font-family: 'Roboto';
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            padding-left: 20px;
+            // padding-top: 45px;
+        }
+        .form__button {
+            padding: 20px 37px;
+            background-color: #CD6326;
+            border: none;
+            font-family: 'Roboto';
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #F7F7F7;
+            position: absolute;
+            right: 269px;
+        }
+    }
+}
