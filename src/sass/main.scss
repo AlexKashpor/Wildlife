@@ -5,8 +5,10 @@
     font-size: 16px;
 }
 
-a {
+a,
+ul {
     text-decoration: none;
+    list-style-type: none;
 }
 
 .container {
@@ -210,10 +212,11 @@ nav {
             background-color: #CCCCCC;
             border: 1px solid #666666;
             height: 65px;
-            
-        
+
+
         }
-        .form__input::placeholder{
+
+        .form__input::placeholder {
             font-family: 'Roboto';
             font-size: 23px;
             font-style: normal;
@@ -224,6 +227,7 @@ nav {
             padding-left: 20px;
             // padding-top: 45px;
         }
+
         .form__button {
             padding: 20px 37px;
             background-color: #CD6326;
@@ -238,6 +242,44 @@ nav {
             color: #F7F7F7;
             position: absolute;
             right: 269px;
+        }
+    }
+}
+
+//footer
+footer {
+    background: url(../img/footer.jpg);
+    width: 100%;
+    height: 360px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .footer__list {
+            display: flex;
+            width: 475px;
+            justify-content: space-between;
+
+            li {
+                a{
+                    font-family: 'Open Sans';
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 60px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #F7F7F7;
+                }
+            }
+        }
+
+        .footer__social {
+            display: flex;
+            width: 240px;
+            justify-content: space-between;
         }
     }
 }
