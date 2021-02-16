@@ -30,7 +30,8 @@ button:hover {}
 .header {
     height: 100vh;
     background-image: url('../img/Hero.jpg');
-    .header__logo:hover{
+
+    .header__logo:hover {
         opacity: 0.9;
         transition: 0.2s ease-in;
     }
@@ -305,6 +306,11 @@ footer {
         align-items: center;
         height: 100%;
 
+        .footer__logo:hover {
+            opacity: 0.7;
+            transition: 0.2s ease-in;
+        }
+
         .footer__list {
             display: flex;
             width: 475px;
@@ -322,12 +328,19 @@ footer {
                     color: #F7F7F7;
                 }
             }
-        }
 
-        .footer__social {
-            display: flex;
-            width: 240px;
-            justify-content: space-between;
         }
     }
+
+    .footer__social {
+        display: flex;
+        width: 240px;
+        justify-content: space-between;
+
+        li a:hover {
+            opacity: 0.7;
+            transition: 0.2s ease-in;
+        }
+    }
+}
 }
