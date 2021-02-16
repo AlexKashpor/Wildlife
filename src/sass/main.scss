@@ -24,9 +24,16 @@ nav {
     margin-bottom: 250px;
 }
 
+button:hover {}
+
+//header
 .header {
     height: 100vh;
     background-image: url('../img/Hero.jpg');
+    .header__logo:hover{
+        opacity: 0.9;
+        transition: 0.2s ease-in;
+    }
 
     .header__list {
         list-style-type: none;
@@ -49,6 +56,21 @@ nav {
             color: #F7F7F7;
         }
 
+        li a:hover {
+            color: #d5d6da;
+            transition: 0.2s ease-in;
+        }
+
+        li a img {
+            position: relative;
+            top: 10px;
+        }
+
+        li a img:hover {
+            opacity: 0.9;
+            transition: 0.2s ease-in;
+        }
+
         li button {
             text-decoration: none;
             background-color: transparent;
@@ -63,6 +85,13 @@ nav {
             letter-spacing: 0em;
             text-align: center;
 
+        }
+
+        li button:hover {
+            background-color: #bd4a08;
+            transition: 0.2s ease-in;
+            cursor: pointer;
+            color: #d5d6da;
         }
     }
 
@@ -92,6 +121,12 @@ nav {
         border: none;
         border-radius: 5px;
         color: #F7F7F7;
+    }
+
+    .header__donate:hover {
+        background-color: #bd4a08;
+        transition: 0.2s ease-in;
+        cursor: pointer;
     }
 }
 
@@ -133,7 +168,6 @@ nav {
         align-items: center;
         margin-bottom: 250px;
 
-        .slider__arrlft {}
 
         .slider__box {
             width: 300px;
@@ -149,7 +183,6 @@ nav {
                 font-weight: 400;
                 line-height: 36px;
                 letter-spacing: 0em;
-                // text-align: center;
                 color: #F7F7F7;
                 position: absolute;
                 bottom: 100px;
@@ -171,6 +204,14 @@ nav {
                 left: 70px;
 
             }
+        }
+
+        .slider__box:hover,
+        .slider__arrlft:hover,
+        .slider__arrrght:hover {
+            opacity: 0.8;
+            transition: ease-in-out 0.5s;
+            // border: 3px solid #F7F7F7;
         }
 
         .slider__box:nth-child(2) {
@@ -243,6 +284,12 @@ nav {
             position: absolute;
             right: 269px;
         }
+
+        .form__button:hover {
+            background-color: #bd4a08;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
     }
 }
 
@@ -257,13 +304,14 @@ footer {
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
         .footer__list {
             display: flex;
             width: 475px;
             justify-content: space-between;
 
             li {
-                a{
+                a {
                     font-family: 'Open Sans';
                     font-size: 23px;
                     font-style: normal;
